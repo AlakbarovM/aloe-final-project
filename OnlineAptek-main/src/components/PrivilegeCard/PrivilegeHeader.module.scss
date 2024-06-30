@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.privilegeHeader{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #c7c7c787;
+    .container{
+        width: 75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+        margin: 10px 0;
+        .privilegeHeaderLogo{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p{
+                font-size: 37px;
+                font-weight: 10;
+                color: rgba(128, 128, 128, 0.466);
+            }
+            h1{
+                font-size: 23px;
+                font-family: apalu-400;
+                color: #BFA672;
+            }
+        }
+        .privilegeHeaderContact{
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            .dropdownContainer{
+                .dropdownMenu{
+                    width: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    li{
+                        list-style: none;
+                        cursor: pointer;
+                        font-size: 15px;
+                    }
+                    li:hover{
+                        color: red  ;
+                    }
+                }
+
+                .customDropdownToggle {
+                    cursor: pointer;
+                    border: 1px solid #cccccc9d;
+                    border: none;
+                    padding: 5px;
+                    background-color: transparent;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background-color 0.3s ease;
+                    width: 35px;
+                    height: 30px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    ul{
+                        
+                        li{
+                            list-style: none;
+                        }
+                    }
+                  
+                    svg {
+                      margin-left: 5px;
+                      transition: transform 0.3s ease;
+                    }
+                  
+                    &:hover {
+                      background-color: #e0e0e0;
+                  
+                      svg {
+                        transform: rotate(180deg);
+                      }
+                    }
+                  }
+            }
+            p{
+                cursor: pointer;
+                color: #39B54A;
+                font-size: 17px;
+                font-weight: 650;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            button{
+                display: flex;
+                align-items: center;
+                border: none;
+                background-color: transparent;
+                gap: 10px;
+                font-size: 16px;
+                font-weight: 200;
+            }
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .privilegeHeader{
+        .container{
+            width: 95%;
+            .privilegeHeaderLogo{
+                flex-direction: column;
+                p{
+                    display: none;
+                }
+                h1{
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:578px) {
+    .privilegeHeader{
+        .container{
+            .privilegeHeaderContact{
+                p{
+                    display: none;
+                }
+                button{
+                    font-size: 20px;
+                
+                }
+            }
+        }
+    }
+}

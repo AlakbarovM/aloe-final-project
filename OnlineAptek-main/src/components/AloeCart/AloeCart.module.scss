@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aloeCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    width: 75%;
+    padding: 30px 0;
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .aloeCartOne {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      background-color: #b9dfe8;
+      padding: 20px 25px;
+      width: 31%;
+      gap: 10px;
+      height: 180px;
+      border-radius: 20px;
+      p {
+        font-size: 16px;
+        font-weight: 500;
+        color: rgb(0, 25, 51);
+        span{
+            color:  #39b54a;
+            cursor: pointer;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width:991px) {
+    .aloeCart{
+        .container{
+            width: 95%;
+            
+          
+        }
+    }
+}
+@media screen and (max-width:768px) {
+    .aloeCart{
+        .container{
+            flex-direction: column;
+            gap: 15px;
+            .aloeCartOne{
+                width: 80%;
+            }
+        }
+    }
+}

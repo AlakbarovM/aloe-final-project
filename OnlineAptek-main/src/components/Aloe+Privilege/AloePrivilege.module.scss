@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aloePrivilege {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    background-color: #d9d9d869;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url(data:image/png;base64,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);
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 30px;
+    margin: 30px 30px;
+    border-radius: 10px;
+    .leftAloePrivilege {
+      max-width: 45%;
+      gap: 30px;
+      display: flex;
+      flex-direction: column;
+      h1 {
+        width: 100%;
+        font-size: 32px;
+        font-weight: 500;
+        span {
+            font-size: 32px;
+            font-weight: 500;
+          color: #39b54a;
+        }
+      }
+      p {
+        color: rgb(138, 148, 166);
+        font-size: 18px;
+        font-weight: 400;
+        span {
+          color: #39b54a;
+        }
+      }
+    }
+    .rightAloePrivilege{
+        min-width: 38%;
+        img{
+            width: 100%;
+        }
+    }
+  }
+}
+@media screen and (max-width:991px) {
+    .aloePrivilege{
+        .container{
+            width: 95%;
+            flex-direction: column;
+            gap: 15px;
+            justify-content: center;
+            align-items: center;
+            .leftAloePrivilege{
+                text-align: center;
+                max-width: 82%;
+                align-items: center;
+                justify-content: center;
+                h1{
+                    font-size: 24px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:578px) {
+    .aloePrivilege{
+        .container{
+            .leftAloePrivilege{
+                max-width: 100%;
+                p{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+}

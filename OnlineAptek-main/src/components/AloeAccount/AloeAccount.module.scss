@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.aloeAccount {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.251);
+  .container {
+    padding: 10px 0;
+    margin: 10px 0;
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    .aloeAccountLogo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      span {
+        font-size: 37px;
+        font-weight: 100;
+        color: rgba(128, 128, 128, 0.269);
+      }
+      p {
+        color: #8a94ae;
+        font-weight: 400;
+        font-size: 17px;
+      }
+    }
+    .aloeAccountContact {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      p {
+        color: #39b54a;
+        font-size: 18px;
+        font-weight: 700;
+      }
+      button {
+        font-size: 16px;
+        color: rgb(5, 15, 33);
+        font-weight: 400;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width:769px) {
+    .aloeAccount{
+        .container{
+            width: 95%;
+            .aloeAccountLogo{
+                flex-direction: column;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                span{
+                    display: none;
+                }
+            }
+            .aloeAccountContact{
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+    }
+}

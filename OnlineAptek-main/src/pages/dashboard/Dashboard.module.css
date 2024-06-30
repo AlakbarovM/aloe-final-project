@@ -1,0 +1,71 @@
+.dashboard {
+    padding: 20px;
+    background-color: #f8f9fa;
+    min-height: 100vh;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    color: #034f84;
+  }
+  
+  .logoutButton {
+    padding: 10px 20px;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .logoutButton:hover {
+    background-color: #c9302c;
+  }
+  
+  .userInfo, .appointments, .pharmacyInfo {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .userInfo h2, .appointments h2, .pharmacyInfo h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #5bc0de;
+  }
+  
+  .userInfo p, .appointments p, .pharmacyInfo p {
+    font-size: 16px;
+    color: #5a5a5a;
+  }
+  
+  .appointment, .pharmacy {
+    border-bottom: 1px solid #e9ecef;
+    padding: 10px 0;
+  }
+  
+  .appointment:last-child, .pharmacy:last-child {
+    border-bottom: none;
+  }
+  
+  .appointment h3, .pharmacy h3 {
+    font-size: 18px;
+    color: #5bc0de;
+  }
+  
+  .deleteButton {
+    padding: 5px 10px;
+    background-color: #d9534f;
+    color: white;
+    border: none
+  }  

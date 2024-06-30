@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.registerHead {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 90vh;
+}
+
+.registerLogo {
+    width: 58%;
+    height: 100%;
+}
+
+.registerLogo img {
+    max-width: 100%;
+    height: 100%;
+}
+
+.auth {
+    min-width: 42%;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.auth h1 {
+    color: rgb(5, 15, 33);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.auth p span {
+    color: #39b54a;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form input {
+    padding: 15px 20px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.452);
+    width: 70%;
+    height: 55px;
+}
+
+form button {
+    padding: 0 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: #39b54a;
+    width: 70%;
+    height: 38px;
+    cursor: pointer;
+}
+
+@media screen and (max-width:991px) {
+    .registerHead .container .registerLogo {
+        width: 90%;
+    }
+
+    .registerHead .container .registerLogo img {
+        max-width: 100%;
+    }
+    .registerHead .container .auth form input{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .registerHead .container .registerLogo {
+        display: none;
+    }
+    .registerHead .container .auth{
+        width: 100%;
+    }
+}

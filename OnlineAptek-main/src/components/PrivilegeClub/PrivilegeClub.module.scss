@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.privilegeClub{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    padding: 0 0 30px 0;
+    .container{
+        width: 75%;
+        padding: 20px 0;
+        margin: 20px 0;
+        .customPaging {
+            font-size: 22px; // İkon boyutu
+            transition: color 0.3s ease; // Renk geçiş efekti
+          }
+          
+          .slick-dots li button:before {
+            content: none; // Varsayılan noktaları gizle
+          }
+          
+          .slick-dots li button {
+            display: flex; // Butonların içindeki ikonları hizalamak için
+            justify-content: center; // Orta hizalama
+            align-items: center; // Orta hizalama
+          }
+          
+          .slick-dots li.slick-active .customPaging {
+            color: #ffffff !important; // Aktif ikonun rengi
+            background-color: black;
+          }
+          .slick-dots li .customPaging {
+            color: #d3d3d3; // İnaktif ikonların rengi
+            background-color: black;
+            color: black;
+          }
+        .blockImg{
+            width: 100%;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .hiddenImg{
+            display: none;
+            cursor: pointer;
+        }
+    }
+}
+@media screen and (max-width:991px) {
+    .privilegeClub{
+        .container{
+            width: 95%;
+        }
+    }
+}
+@media screen and (max-width:578px)  {
+    .privilegeClub{
+        .container{
+           .hiddenImg{
+            display: block;
+            width: 100%;
+            border-radius: 10px;
+           }
+           .blockImg{
+            display: none;
+           }
+        }
+    }
+}

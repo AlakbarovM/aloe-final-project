@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.apk {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e8f1f2;
+  .container {
+    width: 95%;
+    padding: 20px 0;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .topApk {
+      text-align: center;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px 0;
+      h1 {
+        color: rgb(2, 70, 80);
+        font-size: 40px;
+        font-size: 600;
+      }
+    }
+    .bottomApk {
+      background-image: url(https://citytoursbaku.com/wp-content/uploads/2020/01/baku-3d-render-satellite-view-topographic-map-frank-ramspott.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      width: 100%;
+      display: flex;
+      padding: 30px;
+      position: relative;
+      height: 50vh;
+      align-items: center;
+      justify-content: space-evenly;
+      overflow: auto;
+      border-top-right-radius: 100px;
+      border-bottom-left-radius: 100px;
+      .buttons {
+        margin-top: 20px;
+        display: flex;
+        button {
+          border: none;
+          background-color: brown;
+          color: #fff;
+          padding: 10px 20px;
+          margin: 0 10px;
+          cursor: pointer;
+          border-radius: 5px;
+          outline: none;
+        }
+        button:hover {
+          background-color: #0056b3;
+          transform: scale(1.1);
+        }
+        button:disabled {
+          background-color: #ccc;
+          cursor: not-allowed;
+        }
+      }
+      .bottomApk::before {
+        content: "";
+        top: 0;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.952);
+        z-index: 0;
+      }
+
+      .oneApk {
+        z-index: 1;
+        width: 35%;
+        height: 160px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border: 1px solid rgba(128, 128, 128, 0.4);
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease;
+        padding: 10px;
+        border-radius: 10px;
+        background-color: gainsboro;
+        p,
+        span {
+          display: flex;
+          gap: 5px;
+          align-items: center;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px) {
+  .apk {
+    .container {
+      .topApk {
+        h1 {
+          font-size: 35px;
+        }
+      }
+      .bottomApk {
+        .oneApk {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .apk {
+    .container {
+      width: 100%;
+      .bottomApk {
+        flex-direction: column;
+        justify-content: center;
+        .oneApk{
+          width: 95%;
+        }
+      }
+    }
+  }
+}
